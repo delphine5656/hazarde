@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Règledu jeux hazardé</title>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+       
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    
+    <div class="container">
+        <div id="nav-bar">
+            <div class="toggle-button" id="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="play.html">Jouer</a></li>
+                <li><a href="règle.html">Règles</a></li>
+            </ul>
+        </div>
+
+    <ion-grid>
+        <ion-row class="ion-padding ion-justify-content-center"> 
+            <ion-text color="danger">
+                <h1 class="ion-text-center">Les Règles du jeux Hazardé</h1>
+            </ion-text>
+        </ion-row>
+
+        <ion-row class="ion-padding ion-justify-content-center">
+            <img id="photo" src="images\de-happy.png" alt="">
+        </ion-row>
+        <ion-row class="ion-padding ion-justify-content-center">
+                <p class="ion-text-justify ion-padding">Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL).
+                    À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite. Le
+                    résultat d’un lancer est ajouté au ROUND.
+                    Lors de son tour, le joueur peut décider à tout moment de:
+                    - Cliquer sur l’option “Hold”, qui permet d’envoyer les points du ROUND vers le GLOBAL. Ce sera alors le
+                    tour de l’autre joueur.
+                    - Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour.
+                    Le premier joueur qui atteint les 100 points sur global gagne le jeu.</p>
+            </ion-row>
+
+            <ion-row class="ion-justify-content-center ion-padding">
+                <div class="nouvellePartie">
+                    <ion-button shape="round" color="warning" type="submit"><a href="play.html"><ion-icon name="link-outline"></ion-icon> nouvelle partie</a></ion-button>
+                    
+        
+                </div> 
+            </ion-row>
+
+            <ion-row>
+                <ion-text color="danger">
+                    <h2 class="ion-text-center">BON GAME!</h2>
+                </ion-text>
+            </ion-row>
+            
+
+    </ion-grid>
+
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

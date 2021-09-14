@@ -1,0 +1,145 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient(circle at center right, rgb(240, 101, 23),rgb(242,169,28));
+    background-repeat: no-repeat;
+    
+    
+}
+
+h1, h2, h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400; 
+}
+ion-button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+/*--menu---*/
+#nav-bar{
+    position: absolute;
+    width: 230px;
+    height: 50%;
+    background-color:rgb(230, 209, 28);
+    border-radius: 15px;
+    left: -300px;
+    transition: .5s ease-in-out;
+    z-index: 4;
+}
+
+/*--icone--*/
+.toggle-button{
+    position: absolute;
+    top: 30px;
+    left: 310px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+
+}
+
+.toggle-button span {
+    width: 60px;
+    height: 10px;
+    border-radius: 5px;
+    background-color:#a50808;
+    display: block;
+    margin-top: 4px;
+    transition: 0.5s ease;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+li a{
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    cursor: pointer; 
+    padding-left: 8%;
+    
+}
+
+li:hover {
+    background-color: rgb(240, 101, 23);
+    color: blanchedalmond;
+
+}
+
+#nav-bar.active {
+    left: 0;
+}
+
+#nav-bar.active .toggle-button {
+    top: 2.8rem;
+    left: 235px;
+}
+
+#nav-bar.active span{
+    position: absolute;
+}
+
+#nav-bar.active span:nth-child(1) { /*on va chercher le premier span*/
+    transform: rotate(45deg);
+}
+
+#nav-bar.active span:nth-child(2) { /*on va chercher le 2 span*/
+    opacity: 0;
+}
+
+#nav-bar.active span:nth-child(3) { /*on va chercher le 3 span*/
+    transform: rotate(-45deg);
+}
+
+#nav-bar.active ~ .content {
+    opacity: 0.3s;
+}
+/*fin menu --*/
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat (2, auto );
+    grid-template-rows: repeat (6, auto );
+    grid-gap: 17px;
+    justify-content: center;
+}
+
+
+
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+
+/*-----------------------page play-------------------*/
+.profil{
+    height: 150px;
+    width: 150px;
+    
+
+}
+
+/*-----------------------page gagne-------------------*/
+
+
+
+
+
