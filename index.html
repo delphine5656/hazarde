@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hazardé</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="nav-bar">
+            <div class="toggle-button" id="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="index.html">Jouer</a></li>
+                <li><a href="règle.html">Règles</a></li>
+            </ul>
+        </div>
+
+        
+
+
+        <ion-grid>
+            <ion-row class="ion-justify-content-center ion-padding">
+
+                <section class="presentation">
+                    <ion-text color="danger">
+                        <h1 >Hazarde</h4>
+                    </ion-text>
+                    <img id="photo" src="images\de-happy.png" alt="" class="ion-margin-bottom">
+                    <div>votre lancé vaut: <span id="scorede">0</span> points</div>
+                </section>
+            </ion-row>
+
+            <ion-row class="ion-justify-content-center ion-padding">
+                <ion-col size="auto" class="ion-align-self-center">
+                    <div id="lancer">
+                        <ion-button shape="round" color="warning"class = "btn-roll ion-margin-end btn-new"><ion-icon name="git-compare-outline"></ion-icon>Lancé le dé</ion-button>
+                        
+                    </div>
+                </ion-col>
+                <ion-col size="auto" class="ion-align-self-center">
+                    <div class="points">
+                        <ion-button shape="round" color="warning" class="btn-hold"><ion-icon name="log-in-outline"></ion-icon> Ajouter points</ion-button>
+                        
+                    </div>
+                </ion-col>
+                
+                
+            </ion-row>
+                
+               
+            
+                <ion-row class="ion-justify-content-center ion-padding">
+                    <ion-col size="auto" class="ion-align-self-center">
+                        <div class="player-0-panel active ion-margin-end">
+                            <ion-text color="danger">
+                                <h2 class="player-name" id="name-0" >Joueur1</h4>
+                              </ion-text>
+                            <img class="profil" src="images\monster-pink.png" alt="">
+                            <div>
+                                <ion-text>Score courant :</ion-text>
+                                <div class="player-current-score ion-padding" id="current-0"></div>
+                            </div>
+                            <div>
+                                <ion-text>Score Global :</ion-text>
+                                <ion-label class="player-score ion-padding" id="score-0"></ion-label> 
+                            </div>
+                        </div>
+                      </ion-col>
+                      <ion-col size="auto" class="ion-align-self-center">
+                        <div class="player-1-panel">
+                            <ion-text color="danger">
+                                <h2 class="player-name" id="name-1" >Joueur2</h4>
+                              </ion-text>
+                            <img class="profil" src="images\monster-green.svg" alt="">
+                            <div>
+                                <ion-text>Score courant :</ion-text>
+                                <div class="player-current-score ion-padding" id="current-1">Score actuel:</div>
+                            </div>
+                            <div>
+                                <ion-text>Score Global :</ion-text>
+                                <ion-label class="player-score ion-padding" id="score-1">Score Global:</ion-label>
+                            </div>
+                            
+                        </div>
+                      </ion-col>
+                </ion-row>
+              
+                <ion-row class="ion-justify-content-center ion-padding">
+                    <div class="nouvellePartie">
+                        <ion-button shape="round" color="warning" type="submit"><a href="index.html"><ion-icon name="link-outline"></ion-icon> nouvelle partie</a></ion-button>
+                        
+            
+                    </div> 
+                </ion-row>
+              
+            
+          </ion-grid>
+
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
