@@ -6,7 +6,6 @@
 
 body{
     background-image: radial-gradient(circle at center right, rgb(240, 101, 23),rgb(242,169,28));
-    background-repeat: repeat;
     position: relative;
     overflow: visible;
     
