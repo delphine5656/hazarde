@@ -7,6 +7,8 @@
 body{
     background-image: radial-gradient(circle at center right, rgb(240, 101, 23),rgb(242,169,28));
     background-repeat: no-repeat;
+    position: relative;
+    overflow: visible;
     
     
 }
@@ -48,7 +50,7 @@ ion-button{
 }
 
 .toggle-button span {
-    width: 60px;
+    width: 50px;
     height: 10px;
     border-radius: 5px;
     background-color:#a50808;
